@@ -3,9 +3,9 @@
 #include<iostream>
 int main()
 {
-    //SALES::Sales s1;
-    //SALES::setSales(s1);
-    //SALES::showSales(s1);
+    SALES::Sales s1;
+    SALES::setSales(s1);
+    SALES::showSales(s1);
     double arr[SALES::QUARTES]={258.34,308.59,150.698,385.27};
     SALES::Sales s2;
     SALES::setSales(s2,arr,SALES::QUARTES);
