@@ -1,4 +1,4 @@
-#include"FourthTack4-2.cpp"
+#include"FourthTack4.cpp"
 #include"FourthTack4.h"
 #include<iostream>
 int main()
