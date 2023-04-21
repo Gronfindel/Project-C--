@@ -13,6 +13,9 @@ int main()
     holding.GetBottles();
     holding.Show();
     const int YRS =3;
+    wine test;
+    test=holding;
+    test.Show();
     int y[YRS]={1993,1995,1998};
     int b[YRS]={48,60,72};
     wine more("Gushing Grape Red",YRS,y,b);

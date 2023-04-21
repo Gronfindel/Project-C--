@@ -26,7 +26,6 @@ T2 &Pair<T1,T2>::second()
 {
     return b;
 }
-
 typedef std::valarray<int> ArrayInt;
 typedef Pair<ArrayInt,ArrayInt> PairArray;
 class wine
@@ -53,7 +52,6 @@ wine::wine(const char *l, int y,const int yr[],const int bot[]):label(l),years(y
         Vintage_Bottles.first()[i]=yr[i];
         Vintage_Bottles.second()[i]=bot[i];
     }
-
 }
 wine::wine(const char *l, int y):label(l),years(y)
 {
@@ -69,8 +67,7 @@ void wine::GetBottles()
         cin>>Vintage_Bottles.first()[i];
         cout<<"Enter bottles for that year: ";
         cin>>Vintage_Bottles.second()[i];
-    }
-    
+    } 
 }
 std::string &wine::Label()
 {
@@ -89,6 +86,5 @@ void wine::Show()
     {
         cout<<"     "<<Vintage_Bottles.first()[i]<<"     "<<Vintage_Bottles.second()[i]<<endl;
     }
-    
 }
 #endif

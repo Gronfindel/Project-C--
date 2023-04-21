@@ -15,7 +15,7 @@ public:
     T1 first()const{return a;}
     T2 second()const{return b;}
     Pair(const T1 &a,const T2 &b):a(a),b(b){}
-    // T1 &operator=(const &Pair pa)
+    Pair<T1,T2> &operator=(const Pair<T1,T2> &pa);
 };
 template<class T1,class T2>
 T1 &Pair<T1,T2>::first()
@@ -27,17 +27,17 @@ T2 &Pair<T1,T2>::second()
 {
     return b;
 }
-// template<class T1,class T2>
-// T1 &Pair<T1,T2>::operator=(const &Pair pa)
-// {
-
-// }
+template<class T1,class T2>
+Pair<T1,T2> &Pair<T1,T2>::operator=(const Pair<T1,T2> &pa)
+{
+    if (this==&pa)return *this;
+    this->a=pa.a;
+    this->b=pa.b;
+    return *this; 
+}
 typedef std::valarray<int> ArrayInt;
 typedef Pair<ArrayInt,ArrayInt> PairArray;
-// PairArray::operator=(PairArray(ArrayInt(),ArrayInt()))
-// {
 
-// }
 class wine:private std::string, private PairArray
 {
 private:
