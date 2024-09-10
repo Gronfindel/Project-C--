@@ -1,4 +1,4 @@
-// workermi.cpp -- working class methods with MI
+// workermi.cpp -- working class methods with MI 14.11
 #include "workermi.h"
 #include <iostream>
 using std::cout;

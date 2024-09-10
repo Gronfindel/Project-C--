@@ -1,8 +1,10 @@
 .vscode/settings.json
 .vscode/tasks.json
-Test/test
-Test/test.cpp
+Test/*
 Chapter 14/FirtsTack/wine_main
 Chapter 14/SecondTack/wine_main
 Chapter 3/FlowMeter
 Chapter 14/SecondTask/wine_main
+.vscode/launch.json
+.vscode/c_cpp_properties.json
+.vscode/c_cpp_properties.json

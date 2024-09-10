@@ -1,4 +1,4 @@
-// workermi.h  -- working classes with MI
+// workermi.h  -- working classes with MI 14.10
 #ifndef WORKERMI_H_
 #define WORKERMI_H_
 #include <string>

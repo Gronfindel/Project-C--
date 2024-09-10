@@ -1,10 +1,11 @@
-// workmi.cpp -- multiple inheritance
+// workmi.cpp -- multiple inheritance 14.12
 // compile with workermi.cpp
 //Данный пример не работает!!!
 #include <iostream>
 #include <cstring>
 #include "workermi.h"
-// #include "QueueTP.h"
+#include "workermi.cpp"
+#include "QueueTP.h"
 
 const int SIZE = 3;
 
@@ -16,7 +17,7 @@ int main()
    using std::strchr;
 
    Worker * lolas[SIZE];
-//    QueueTP<Worker*> qw(SIZE);
+   QueueTP<Worker*> qw(SIZE);
     int ct;
     for (ct = 0; ct < SIZE; ct++)
     {
@@ -43,7 +44,7 @@ int main()
         }
 		cin.get();
         lolas[ct]->Set();
-		// lolas.enQueueTP(tmp);
+		qw.enQueueTP(lolas[ct]);
     }
     cout << "\nHere is your staff:\n";
     int i;
