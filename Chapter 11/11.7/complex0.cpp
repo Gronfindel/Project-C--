@@ -47,7 +47,7 @@ std::istream &operator>>(std::istream &is,complex &Comp)
 }
 std::ostream &operator<<(std::ostream &os,const complex &Comp)
 {
-    os<<"("<<Comp.real<<", "<<Comp.imaginary<<")"<<endl;
+    os<<"("<<Comp.real<<", "<<Comp.imaginary<<")"<<std::endl;
     return os;
 }
 complex::~complex(){}
