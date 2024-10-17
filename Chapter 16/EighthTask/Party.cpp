@@ -17,13 +17,13 @@ int main()
     string FriendName;
     while (getline(cin,FriendName)&&FriendName !="q" && FriendName != "Q")
         Matt.push_back(FriendName);
-    cout<<"Mat's sorted guest list: "<<endl;
+    cout<<"Mat's guest list: "<<endl;
     for(string x:Matt)
         cout<<x<<endl;
     cout<<"Enter Pat's friends(q to quit): ";
     while (getline(cin,FriendName)&&FriendName !="q" && FriendName != "Q")
         Pat.push_back(FriendName);
-    cout<<"Pat's sorted guest list: "<<endl;
+    cout<<"Pat's guest list: "<<endl;
     for(string x:Pat)
         cout<<x<<endl;
     cout<<"General quest list: "<<endl;
